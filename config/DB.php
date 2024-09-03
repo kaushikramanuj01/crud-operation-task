@@ -2,6 +2,8 @@
 
 class SubDB{
 
+// ! This function is used to perform various database operations such as inserting data, updating data, deleting records, and retrieving data. The function automatically builds the query based on the parameters passed to it and returns the result.
+
 function performCRUD($tableName, $operation, $data, $where)
 {
     global $conn;
@@ -74,6 +76,7 @@ function performCRUD($tableName, $operation, $data, $where)
     return $message;
 }
 
+// ! This function is designed to retrieve data from the database using complex queries, such as sorting data, applying limits, and skipping records.
 function execute($tableName, $where = array(), $sort = '', $limit = '',$skip = '')
 {
     global $conn;
@@ -148,7 +151,7 @@ function sanitize($input) {
 }
 
 // Example usage:
-// $tableName = "users";
+// $tableName = "tblrecord";
 // $where = array("status" => "active"); // Customize the WHERE clause as needed
 // $sort = "created_at DESC"; // Customize the sorting as needed
 // $limit = "10"; // Customize the limit as needed
