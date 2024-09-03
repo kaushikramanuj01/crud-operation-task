@@ -1,0 +1,104 @@
+/* Basic table styling */
+
+.table_section{
+    display: flex;
+    justify-content: center;
+}
+
+.styled-table {
+    width: 83%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.styled-table th{
+    padding: 4px 6px;
+    border: 1px solid #dddddd;
+}
+.styled-table td {
+    padding: 0px 6px;
+    border: 1px solid #dddddd;
+}
+
+/* Header row styling */
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+}
+
+/* Button styling */
+.btn {
+    color: white;
+    margin: 7px 5px;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+/* Update button styling */
+.update-btn {
+    color: white;
+}
+
+/* Delete button styling */
+.delete-btn {
+    color: white;
+}
+
+/* Hover effects for buttons */
+.update-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+.view-btn:hover {
+    background-color: #946767;
+}
+
+@media (max-width: 1024px) {
+    .styled-table td {
+        font-size: 15px;
+    }
+    .btn img{
+        width: 16px !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .styled-table {
+        font-size: 14px;
+    }
+    .table_title, .table_con {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 1px solid black;
+    }
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* .myTable {
+    width: 100%;
+    border-collapse: collapse;
+} */
+
+/* .myTable th,
+.myTable td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.myTable th {
+    background-color: #f2f2f2;
+} */
